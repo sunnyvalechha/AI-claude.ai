@@ -1,1 +1,10 @@
-# AI-claude.ai
+Introduction:
+
+Installation:
+
+CoreLoop/AgenticLoop:
+
+Commands:
+
+- claude doctor  # diagnostic
+- claude
