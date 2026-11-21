@@ -1,13 +1,17 @@
-Introduction:
+What is Claude Code? 
+* Claude is an agentic coding assistant that can generate code, understands your codebase, edits files, runs commands, and works right inside your terminal, IDE or browser.
 
 Installation:
-
-CoreLoop/AgenticLoop:
+* Google -> Claude code and download as per your OS.
 
 Commands:
-
+- claude --version    # Verify installation & version
 - claude doctor  # diagnostic
 - .claude/settings.local.json  # this folder contains local claude permissions, global is different
+
+
+
+
 
 Auto Memory:
 
