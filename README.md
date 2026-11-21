@@ -27,6 +27,8 @@ Claude.md  (markdown file, instruction file inside your project)
 - How correctness is verified.
 - Claude.md flips the model - define the rule once and every session carries them forward.
 - Dont create claude.md file manually, just run "/init". The claude code analyzes the codebase and generates a starter claude.md
+- If the rule is very important use words in claude.md file like "IMPORTANT" or "YOU MUST" for critical rules to improve functionality
+- check wordings if rule are continuously ignored.
 - 
 
 
