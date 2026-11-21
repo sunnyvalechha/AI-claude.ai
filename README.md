@@ -6,21 +6,33 @@ Installation:
 
 Commands:
 - claude --version    # Verify installation & version
+- /login              # login claude once installed & these are / commands
+- /voice              # Enable voice mode
+- shift+tab           # change mode in cli
+- claude              # Start a new session
+- claude "abc xyz"    # start with specific task
+- claude -p "query"   # run a query & exit
+- ! pwd, ! git push                # shell command with !, saves tokens 
+- claude --model opus  # start with specific model
+- claude -c           # continue your last session
 - claude doctor  # diagnostic
 - .claude/settings.local.json  # this folder contains local claude permissions, global is different
 
 
-
+Claude.md  (markdown file, instruction file inside your project)
+- It is not documentation and not a style guide. It's a onboarding of a new team member and instruction we want to give them, do's & dont's
+- It tells, what this system is trying to achieve.
+- Which patterns are allowed and which are banned.
+- How changes should be made.
+- How correctness is verified.
+- Claude.md flips the model - define the rule once and every session carries them forward.
+- Dont create claude.md file manually, just run "/init". The claude code analyzes the codebase and generates a starter claude.md
+- 
 
 
 Auto Memory:
 
-- claude --resume  # resumes your running tasks
-- Location: at root location, cd .., cd .claude  # Global settings
--  
-
-Info:
-* Greenfeild Project - Starting from Stratch
-* Brownfeild Project - Existing Project
+- claude --resume      # resumes your running tasks
+- Location: "at root location" "cd .." "cd" ".claude"    # Global settings
 
 
