@@ -8,14 +8,15 @@ Commands:
 - claude --version    # Verify installation & version
 - /login              # login claude once installed & these are / commands
 - /voice              # Enable voice mode
+- /config             # Claude settings, Settings Location ".claude/settings.local.json"
 - shift+tab           # change mode in cli
 - claude              # Start a new session
 - claude "abc xyz"    # start with specific task
 - claude -p "query"   # run a query & exit
 - ! pwd, ! git push                # shell command with !, saves tokens 
-- claude --model opus  # start with specific model
-- claude -c           # continue your last session
-- claude doctor  # diagnostic
+- claude --model opus              # start with specific model
+- claude -c                        # continue your last session
+- claude doctor                    # diagnostic
 - .claude/settings.local.json  # this folder contains local claude permissions, global is different
 
 
