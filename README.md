@@ -8,7 +8,6 @@ Commands:
 - claude --version                 # Verify installation & version
 - /login                           # login claude once installed & these are / commands
 - /voice                           # Enable voice mode
-- /config                          # Claude settings, Settings Location ".claude/settings.local.json"
 - shift+tab                        # change mode in cli
 - claude                           # Start a new session
 - claude "abc xyz"                 # start with specific task
@@ -30,6 +29,20 @@ Claude.md  (markdown file, instruction file inside your project)
 - Dont create claude.md file manually, just run "/init". The claude code analyzes the codebase and generates a starter claude.md
 - If the rule is very important use words in claude.md file like "IMPORTANT" or "YOU MUST" for critical rules to improve functionality
 - check wordings if rule are continuously ignored.
+
+Claude code settings:
+- /config                          # Claude settings, Settings file location ".claude/settings.local.json"
+
+- settings.json                    # Create "settings.json" file manually if any settings required apart from "/config"
+
+* "settings.json" Persistent configuration: A proper approach structured Json files at different scopes that persist across sessions.
+* This is where you define your real configuration. This file is official mechanism for configuring claude code.
+* This is works as a priority level.
+
+Managed -  **Highest Priority** - Maintained inside Claude code installation folder, maintained by Claude administrator at org level.
+User    -  **Lowest Priority** - Maintained inside the user home directory. Applies to all projects you work on, on user level not org level.
+Project -  Saved inside project directory, shared with org level & commited to git, used when teams wants consistent settings.
+Local   - Saved inside project directory, Exist for a specific project, automatically ignores with git, preferred for temporary changes.
 
 
 Auto Memory:
